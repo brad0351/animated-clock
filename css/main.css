@@ -8,7 +8,7 @@ html {
   position: relative;
   width: 300px;
 
-  background: transparent url("..//images/clock-face.svg") no-repeat center center;
+  background: transparent url("../images/clock-face.svg") no-repeat center center;
 }
 
 .clock-center {
@@ -23,16 +23,16 @@ html {
   left: calc(50% - 7px);
   position: absolute;
   width: 14px;
+
+transform-origin: 50% calc(100% - 8px);
 }
-'
-transform-orgin: 50% calc(100% - 8px);
 
 .hand-hour {
   animation: hand-rotate 6s linear infinite;
 }
 
 .hand-minute {
-  aninmation: hand-rotate .5s linear infinite;
+  animation: hand-rotate .5s linear infinite;
 }
 
 @keyframes hand-rotate {
@@ -44,6 +44,4 @@ transform-orgin: 50% calc(100% - 8px);
 100% {
   transform: rotate(360deg);
 }
-
-
 }
